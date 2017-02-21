@@ -1,0 +1,42 @@
+{{ partial "head.html" . }}
+
+<main class="container">
+    <ul class="posts">
+        {{ range .Data.Pages }}
+        <li>
+            <article class="post">
+                <h1>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+
+                <span class="post-date">
+                    <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                    {{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}
+                </span>
+
+                {{ if eq .Site.Params.truncate false }}
+                    {{ .Content }}
+                {{ else if .Description }}
+                    <p>{{ .Description }}</p>
+                    <br />
+                    <a class="read-more" href="{{ .Permalink }}">Read more...</a>
+                {{ else }}
+                    {{ .Summary }}
+                    {{ if .Truncated }}
+                        <br /><a class="read-more" href="{{ .Permalink }}">Read more...</a>
+                    {{ end }}
+                {{ end }}
+
+                {{ if isset .Params "categories" }}
+                    <br/>
+                    {{ range .Params.categories }}
+                        <a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                {{ end }}
+            </article>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+
+{{ partial "foot.html" . }}

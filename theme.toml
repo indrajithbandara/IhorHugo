@@ -1,0 +1,17 @@
+name = "Ihor"
+license = "MIT"
+licenselink = "https://github.com/ihor/ihor/LICENSE"
+description = "Minimalistic responsive theme with semantic markup"
+homepage = "https://github.com/ihor/ihor"
+tags = ["blog", "technical", "personal"]
+features = ["blog", "technical", "personal"]
+min_version = 0.14
+
+[author]
+    name = "Ihor Burlachenko"
+    homepage = "http://ihor.burlachenko.com"
+
+[original]
+    author =  "poole"
+    homepage = "http://hyde.getpoole.com"
+    repo = "https://github.com/poole/hyde"
