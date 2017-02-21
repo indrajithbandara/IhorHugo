@@ -9,7 +9,7 @@ Minimalistic [Hugo](https://gohugo.io) theme with responsive design and semantic
 $ cd your_site_repo/
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/zyro/hyde-x
+$ git clone https://github.com/ihor/IhorHugo
 ```
 
 See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
@@ -39,7 +39,7 @@ title = "Your site title"
 languageCode = "en-us"
 disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
-theme = "hyde-x"
+theme = "ihor"
 paginate = 10
 
 [author]
