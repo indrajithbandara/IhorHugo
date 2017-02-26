@@ -1,7 +1,7 @@
 Ihor
 ====
 
-Minimalistic [Hugo](https://gohugo.io) theme with responsive design and semantic markup. Provides integration with [Disqus](https://disqus.com/), Google Analytics and highlights code using [highlight.js](https://highlightjs.org).
+Minimalistic [Hugo](https://gohugo.io) theme with responsive design and semantic markup. Provides integration with [Disqus](https://disqus.com/), Google Analytics and highlights code using [prism.js](http://prismjs.com/).
 
 ### Installation
 
