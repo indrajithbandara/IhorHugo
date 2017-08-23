@@ -10,12 +10,14 @@
     <title>{{ if eq .Title .Site.Author.name }} {{ .Title }} {{ else }} {{ .Title }} &middot; {{ .Site.Author.name }} {{ end }}</title>
 
     <!-- CSS -->
+
+    {{ if isset .Site.Params "highlight" }}
+        <link href="{{ "/css/highlight/prism" | absURL }}-{{ .Site.Params.highlight }}.css" rel="stylesheet" />
+    {{ end }}
+
     <link rel="stylesheet" href="{{ "/css/poole.css" | absURL }}">
     <link rel="stylesheet" href="{{ "/css/styles.css" | absURL }}">
     <link rel="stylesheet" type="text/css" href="https://cdn-static-1.medium.com/_/fp/css/fonts-lazy-latin-base.jMU532QDmysQMOINr-cr2A.css" />
-    {{ if isset .Site.Params "highlight" }}
-        <link rel="stylesheet" href="{{ "/css/highlight/" | absURL }}{{ .Site.Params.highlight }}.css">
-    {{ end }}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     {{ with .Site.Params.customCSS }}<link rel="stylesheet" href="{{ . }}">{{ end }}
 
