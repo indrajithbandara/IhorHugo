@@ -9,7 +9,7 @@ Minimalistic [Hugo](https://gohugo.io) theme with responsive design and semantic
 $ cd your_site_repo/
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/ihor/IhorHugo
+$ git clone https://github.com/ihor/IhorHugo ihor
 ```
 
 See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
