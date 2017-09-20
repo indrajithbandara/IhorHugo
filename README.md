@@ -3,6 +3,10 @@ Ihor
 
 Minimalistic [Hugo](https://gohugo.io) theme with responsive design and semantic markup. Provides integration with [Disqus](https://disqus.com/), Google Analytics and highlights code using [prism.js](http://prismjs.com/).
 
+### Example
+
+Have a look at my personal website [ihor.burlachenko.com](http://ihor.burlachenko.com/) to see how the theme looks like. The sources are [here](https://github.com/ihor/ihor.burlachenko.com).
+
 ### Installation
 
 ```
@@ -84,6 +88,9 @@ paginate = 10
 
     # Metadata used to drive integrations.
     googleAnalytics = "Your Google Analytics tracking code"
+
+    # Pinterest
+    pinterestVerify = "Your Pinterest verification code"
 
     # Header social links, these must be full URLs.
     github = ""
