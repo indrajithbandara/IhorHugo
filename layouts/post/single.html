@@ -18,6 +18,19 @@
         {{ end }}
     </article>
 
+    {{ if isset .Site.Params "twitter" }}
+        <section style="border-top: 1px solid rgba(0,0,0,.05); padding-top: 1em; margin-bottom: 1em;">
+            Liked the article? Follow me on Twitter to stay in touch
+            <a class="twitter-follow-button"
+                href="{{ .Site.Params.twitter }}"
+                data-size="large"
+                data-show-count="true"
+                data-show-screen-name="true">
+                Follow
+            </a>
+        </section>
+    {{ end }}
+
     {{ if .Site.DisqusShortname }}
         <div id="disqus_thread"></div>
     {{ end }}
